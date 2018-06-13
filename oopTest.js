@@ -44,21 +44,21 @@ const dove = new Dove("Dove", "Dove is flying", "coo");
 const eagle = new Eagle("Eagle", "Eagle is flying");
 const ostrich = new Ostrich("Ostrich", "Ostrich is flying");
 
-dove.features()
+dove.features('Human friendly', 'Domestic')
 console.log(dove.type());
 console.log(dove.sound());
 console.log(dove.movement());
 
 console.log("-----------------------------");
 
-eagle.features()
+eagle.features('strong viosion', 'strong claws', 'flies the hight of the skies')
 console.log(eagle.move());
 console.log(eagle.move());
 console.log(eagle.move());
 
 // console.log("-----------------------------");
 
-ostrich.features()
+ostrich.features('Dont make sound')
 console.log(ostrich.move());
 console.log(ostrich.move());
 console.log(ostrich.move());
