@@ -4,10 +4,11 @@ class Bird{
 
 	constructor(name, mov, sound){
 		this.name = name;
-		this.mov;
+		this.mov = mov;
 		this.sound = sound;
 	}
 
+  // Bird class/object encapsulate other method and properties in it
 	movement(){
 		return this.mov;
 	}
@@ -16,12 +17,17 @@ class Bird{
 		return this.name;
 	}
 
-	sound(){
-		return this.sound;
+  sound1(){
+		return this.name;
 	}
 
-	features(){
-		return "Class birth is a parent class with a lot of childreb classes";
+	// method overloading
+	features(...features){
+		console.log("This Bird contains the following features:");
+		let counter = 1;
+		for (let feature of features) {
+			console.log(counter++, ". " + feature);
+		}
 	}
 
 }
